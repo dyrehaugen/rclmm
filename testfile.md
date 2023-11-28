@@ -1,5 +1,0 @@
-
-# TESTFILE
-
-Only for testing
-

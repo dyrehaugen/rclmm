@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Model-evaluation | Climate Models</title>
+  <meta name="description" content="3 Model-evaluation | Climate Models" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Model-evaluation | Climate Models" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="dyrehaugen/rclmm" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Model-evaluation | Climate Models" />
+  
+  
+  
+
+<meta name="author" content="Dyrehaugen Web Notebook" />
+
+
+<meta name="date" content="2023-11-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="climate-models.html"/>
+<link rel="next" href="values-in-climate-science.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Climate Models</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Climate Change</a></li>
+<li class="part"><span><b>I Climate Models</b></span></li>
+<li class="chapter" data-level="2" data-path="climate-models.html"><a href="climate-models.html"><i class="fa fa-check"></i><b>2</b> Climate Models</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="climate-models.html"><a href="climate-models.html#university-of-chicago"><i class="fa fa-check"></i><b>2.1</b> University of Chicago</a></li>
+<li class="chapter" data-level="2.2" data-path="climate-models.html"><a href="climate-models.html#mental-picture-of-greenhouse-effect"><i class="fa fa-check"></i><b>2.2</b> Mental Picture of Greenhouse Effect</a></li>
+<li class="chapter" data-level="2.3" data-path="climate-models.html"><a href="climate-models.html#political-iams"><i class="fa fa-check"></i><b>2.3</b> Political IAMs</a></li>
+<li class="chapter" data-level="2.4" data-path="climate-models.html"><a href="climate-models.html#cap6"><i class="fa fa-check"></i><b>2.4</b> CAP6</a></li>
+<li class="chapter" data-level="2.5" data-path="climate-models.html"><a href="climate-models.html#coupled-climate-social-models"><i class="fa fa-check"></i><b>2.5</b> Coupled Climate-Social Models</a></li>
+<li class="chapter" data-level="2.6" data-path="climate-models.html"><a href="climate-models.html#dice-climate-model"><i class="fa fa-check"></i><b>2.6</b> DICE Climate Model</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="climate-models.html"><a href="climate-models.html#the-failure-of-dice-economics"><i class="fa fa-check"></i><b>2.6.1</b> The failure of Dice Economics</a></li>
+<li class="chapter" data-level="2.6.2" data-path="climate-models.html"><a href="climate-models.html#critique-of-the-nordhaus-school"><i class="fa fa-check"></i><b>2.6.2</b> Critique of the ‘Nordhaus School’</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="climate-models.html"><a href="climate-models.html#e3me-ftt-genie"><i class="fa fa-check"></i><b>2.7</b> E3ME-FTT-GENIE</a></li>
+<li class="chapter" data-level="2.8" data-path="climate-models.html"><a href="climate-models.html#ez-climate-model"><i class="fa fa-check"></i><b>2.8</b> EZ-Climate Model</a></li>
+<li class="chapter" data-level="2.9" data-path="climate-models.html"><a href="climate-models.html#fair-climate-model"><i class="fa fa-check"></i><b>2.9</b> FAIR Climate Model</a></li>
+<li class="chapter" data-level="2.10" data-path="climate-models.html"><a href="climate-models.html#gcam"><i class="fa fa-check"></i><b>2.10</b> GCAM</a></li>
+<li class="chapter" data-level="2.11" data-path="climate-models.html"><a href="climate-models.html#global-calculator"><i class="fa fa-check"></i><b>2.11</b> Global Calculator</a></li>
+<li class="chapter" data-level="2.12" data-path="climate-models.html"><a href="climate-models.html#mimi-framework"><i class="fa fa-check"></i><b>2.12</b> Mimi Framework</a></li>
+<li class="chapter" data-level="2.13" data-path="climate-models.html"><a href="climate-models.html#modtran"><i class="fa fa-check"></i><b>2.13</b> MODTRAN</a></li>
+<li class="chapter" data-level="2.14" data-path="climate-models.html"><a href="climate-models.html#monash-climate-model"><i class="fa fa-check"></i><b>2.14</b> Monash Climate Model</a></li>
+<li class="chapter" data-level="2.15" data-path="climate-models.html"><a href="climate-models.html#page"><i class="fa fa-check"></i><b>2.15</b> PAGE</a></li>
+<li class="chapter" data-level="2.16" data-path="climate-models.html"><a href="climate-models.html#bern-simple-climate-model-bernscm"><i class="fa fa-check"></i><b>2.16</b> Bern Simple Climate Model (BernSCM)</a></li>
+<li class="chapter" data-level="2.17" data-path="climate-models.html"><a href="climate-models.html#noresm"><i class="fa fa-check"></i><b>2.17</b> NorESM</a>
+<ul>
+<li class="chapter" data-level="2.17.1" data-path="climate-models.html"><a href="climate-models.html#ccsm4"><i class="fa fa-check"></i><b>2.17.1</b> CCSM4</a></li>
+<li class="chapter" data-level="2.17.2" data-path="climate-models.html"><a href="climate-models.html#noresm-features"><i class="fa fa-check"></i><b>2.17.2</b> NorESM Features</a></li>
+</ul></li>
+<li class="chapter" data-level="2.18" data-path="climate-models.html"><a href="climate-models.html#ai-in-climate-research"><i class="fa fa-check"></i><b>2.18</b> AI in Climate Research</a></li>
+<li class="chapter" data-level="2.19" data-path="climate-models.html"><a href="climate-models.html#climate-catastrophe"><i class="fa fa-check"></i><b>2.19</b> Climate Catastrophe</a>
+<ul>
+<li class="chapter" data-level="2.19.1" data-path="climate-models.html"><a href="climate-models.html#endgame"><i class="fa fa-check"></i><b>2.19.1</b> Endgame</a></li>
+</ul></li>
+<li class="chapter" data-level="2.20" data-path="climate-models.html"><a href="climate-models.html#goal-index"><i class="fa fa-check"></i><b>2.20</b> Goal Index</a></li>
+<li class="chapter" data-level="2.21" data-path="climate-models.html"><a href="climate-models.html#model-drift"><i class="fa fa-check"></i><b>2.21</b> Model Drift</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="model-evaluation.html"><a href="model-evaluation.html"><i class="fa fa-check"></i><b>3</b> Model-evaluation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="model-evaluation.html"><a href="model-evaluation.html#measuering-forcings"><i class="fa fa-check"></i><b>3.1</b> Measuering Forcings</a></li>
+<li class="chapter" data-level="3.2" data-path="model-evaluation.html"><a href="model-evaluation.html#modeling-feedbacks-interactions"><i class="fa fa-check"></i><b>3.2</b> Modeling Feedbacks Interactions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="values-in-climate-science.html"><a href="values-in-climate-science.html"><i class="fa fa-check"></i><b>4</b> Values in Climate Science</a></li>
+<li class="chapter" data-level="5" data-path="jra55--japanese-reanalysis-data.html"><a href="jra55--japanese-reanalysis-data.html"><i class="fa fa-check"></i><b>5</b> JRA55 -Japanese Reanalysis Data</a></li>
+<li class="part"><span><b>II Appendices</b></span></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i><b>A</b> About</a></li>
+<li class="chapter" data-level="B" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>B</b> Links</a></li>
+<li class="chapter" data-level="C" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i><b>C</b> NEWS</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="news.html"><a href="news.html#antarctica-polar-amplification"><i class="fa fa-check"></i><b>C.1</b> 230908 Antarctica Polar Amplification</a></li>
+<li class="chapter" data-level="C.2" data-path="news.html"><a href="news.html#no-us-green-monetary-policy---but-eu"><i class="fa fa-check"></i><b>C.2</b> 230116 No US Green Monetary Policy - but EU?</a></li>
+<li class="chapter" data-level="C.3" data-path="news.html"><a href="news.html#global-co2-emissions-have-been-flat-for-a-decade-new-data-reveals"><i class="fa fa-check"></i><b>C.3</b> 211104 Global CO2 emissions have been flat for a decade, new data reveals</a></li>
+<li class="chapter" data-level="C.4" data-path="news.html"><a href="news.html#top-climate-scientists-are-sceptical-that-nations-will-rein-in-global-warming"><i class="fa fa-check"></i><b>C.4</b> 211104 Top climate scientists are sceptical that nations will rein in global warming</a></li>
+<li class="chapter" data-level="C.5" data-path="news.html"><a href="news.html#microsoft-co2-removal"><i class="fa fa-check"></i><b>C.5</b> 210921 Microsoft CO2-removal</a></li>
+<li class="chapter" data-level="C.6" data-path="news.html"><a href="news.html#orca-turned-on---iceland"><i class="fa fa-check"></i><b>C.6</b> 210909 ORCA turned on - Iceland</a></li>
+<li class="chapter" data-level="C.7" data-path="news.html"><a href="news.html#arctic-sea-ice-at-record-low"><i class="fa fa-check"></i><b>C.7</b> 210715 Arctic Sea Ice at Record Low</a></li>
+<li class="chapter" data-level="C.8" data-path="news.html"><a href="news.html#dutch-court-against-shell"><i class="fa fa-check"></i><b>C.8</b> 210526 Dutch Court against Shell</a></li>
+<li class="chapter" data-level="C.9" data-path="news.html"><a href="news.html#ndcs-need-80-increase-to-2c"><i class="fa fa-check"></i><b>C.9</b> 210509 NDCs need 80% increase to 2°C</a></li>
+<li class="chapter" data-level="C.10" data-path="news.html"><a href="news.html#young-legal-action"><i class="fa fa-check"></i><b>C.10</b> 210508 Young Legal Action</a></li>
+<li class="chapter" data-level="C.11" data-path="news.html"><a href="news.html#earths-axis-tilted-by-melting-glaciers"><i class="fa fa-check"></i><b>C.11</b> 210424 Earth’s Axis tilted by Melting Glaciers</a></li>
+<li class="chapter" data-level="C.12" data-path="news.html"><a href="news.html#co2-and-methane-surged-in-2020"><i class="fa fa-check"></i><b>C.12</b> 210410 CO2 and Methane surged in 2020</a></li>
+<li class="chapter" data-level="C.13" data-path="news.html"><a href="news.html#gas-sustainability"><i class="fa fa-check"></i><b>C.13</b> 210404 Gas Sustainability</a></li>
+<li class="chapter" data-level="C.14" data-path="news.html"><a href="news.html#us-scc-update-in-progress"><i class="fa fa-check"></i><b>C.14</b> 210220 US SCC Update in Progress</a></li>
+<li class="chapter" data-level="C.15" data-path="news.html"><a href="news.html#focus-on-steel-meat-and-cement"><i class="fa fa-check"></i><b>C.15</b> 210215 Focus on Steel, Meat and Cement</a></li>
+<li class="chapter" data-level="C.16" data-path="news.html"><a href="news.html#new-insights-in-climate-science-2020"><i class="fa fa-check"></i><b>C.16</b> 210127 10 New Insights in Climate Science 2020</a></li>
+<li class="chapter" data-level="C.17" data-path="news.html"><a href="news.html#adaptation-summit"><i class="fa fa-check"></i><b>C.17</b> 210130 Adaptation Summit</a></li>
+<li class="chapter" data-level="C.18" data-path="news.html"><a href="news.html#warming-all-anthropogenic"><i class="fa fa-check"></i><b>C.18</b> 210118 Warming all anthropogenic</a></li>
+<li class="chapter" data-level="C.19" data-path="news.html"><a href="news.html#globale-temperature-1880-2020"><i class="fa fa-check"></i><b>C.19</b> 21014 Globale Temperature 1880-2020</a></li>
+<li class="chapter" data-level="C.20" data-path="news.html"><a href="news.html#not-so-long-lag"><i class="fa fa-check"></i><b>C.20</b> 210104 Not so long lag?</a></li>
+<li class="chapter" data-level="C.21" data-path="news.html"><a href="news.html#climate-finance-shadow-report-2020"><i class="fa fa-check"></i><b>C.21</b> 210102 Climate Finance Shadow Report 2020</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyrehaugen/rclmm" target="blank">On Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Climate Models</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="model-evaluation" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Model-evaluation<a href="model-evaluation.html#model-evaluation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>GCMeval: a tool for climate model ensemble evaluation</em></p>
+<p><img src="fig/GCMevalNorthEuropeBestModels.png" /></p>
+<p>The global climate models indicate quite a range of future outcomes in terms of
+precipitation and temperature.
+To account for that, regional scenarios need to use fairly large multi-model ensembles.</p>
+<p><a href="https://gcmeval.met.no/">GCM-eval</a></p>
+<div id="measuering-forcings" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Measuering Forcings<a href="model-evaluation.html#measuering-forcings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Earth is on a budget – an energy budget. Our planet is constantly trying to balance the flow of energy in and out of Earth’s system. But human activities are throwing that off balance, causing our planet to warm in response.</p>
+<p>Adding more components that absorb radiation – like greenhouse gases – or removing those that reflect it – like aerosols – throws off Earth’s energy balance, and causes more energy to be absorbed by Earth instead of escaping into space. This is called a radiative forcing, and it’s the dominant way human activities are affecting the climate.</p>
+<p>limate modelling predicts that human activities are causing the release of greenhouse gases and aerosols that are affecting Earth’s energy budget. Now, a NASA study has confirmed these predictions with direct observations for the first time: radiative forcings are increasing due to human actions, affecting the planet’s energy balance and ultimately causing climate change.
+The <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL091585">paper</a> was published online March 25, 2021, in the journal Geophysical Research Letters.</p>
+<p>NASA’s Clouds and the Earth’s Radiant Energy System (CERES) project studies the flow of radiation at the top of Earth’s atmosphere. A series of CERES instruments have continuously flown on satellites since 1997. Each measures how much energy enters Earth’s system and how much leaves, giving the overall net change in radiation. That data, in combination with other data sources such as ocean heat measurements, shows that there’s an energy imbalance on our planet.
+But it doesn’t tell us what factors are causing changes in the energy balance.</p>
+<p>This study used a new technique to parse out how much of the total energy change is caused by humans. The researchers calculated how much of the imbalance was caused by fluctuations in factors that are often naturally occurring, such as water vapor, clouds, temperature and surface albedo (essentially the brightness or reflectivity of Earth’s surface).
+The researchers calculated the energy change caused by each of these natural factors, then subtracted the values from the total. The portion leftover is the radiative forcing.</p>
+<p>The team found that human activities have caused the radiative forcing on Earth to increase by about 0.5 Watts per square meter from 2003 to 2018. The increase is mostly from greenhouse gases emissions from things like power generation, transport and industrial manufacturing. Reduced reflective aerosols are also contributing to the imbalance.</p>
+<p><a href="https://www.nasa.gov/feature/goddard/2021/direct-observations-confirm-that-humans-are-throwing-earth-s-energy-budget-off-balance">NASA Goddard Direct Observations of Forcings</a></p>
+</div>
+<div id="modeling-feedbacks-interactions" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Modeling Feedbacks Interactions<a href="model-evaluation.html#modeling-feedbacks-interactions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Berwyn</em></p>
+<p><strong>A new study categorizes climate feedback loops and the possibility they could push the climate past planetary tipping points.</strong></p>
+<p>Recent climate projections may be underestimating the pace of global warming in an atmosphere damaged by greenhouse gas emissions, because the interaction of powerful climate feedback loops that can accelerate warming are not well-represented in key climate models, an international team of scientists concluded in a <a href="https://www.cell.com/one-earth/fulltext/S2590-3322(23)00004-0#articleInformation">study (paywall)</a> published today in the journal One Earth. Their findings suggest that efforts to reduce emissions require even more urgency to avoid worst-case climate outcomes, the team reported.</p>
+<p>We would like to see an IPCC special report that focuses on the many risky climate feedbacks and the possible acceleration towards planetary tipping points.</p>
+<p>Recent <a href="https://climateactiontracker.org/global/temperatures/#:~:text=Current%20policies%20presently%20in%20place,C%20above%20pre%2Dindustrial%20levels.">evaluations</a> conclude that, if countries meet the emissions-reduction targets they’ve set for themselves, the average global temperature would warm 2.7 degrees Celsius from pre-industrial temperatures by 2100, which would have catastrophic impacts for people and ecosystems. But if some of the feedback loops shown in the new paper accelerate, warming could soar well above that level, toward 4 degrees Celsius, by the end of the century.</p>
+<p>The researchers examined 41 climate feedback loops and found 27 that significantly increase warming but may not be fully accounted for in climate models.
+The models often overlook the cumulative effect all of them together might have.</p>
+<p>We are particularly concerned about several biological feedback loops, including permafrost thawing, forest destruction, loss of soil carbon and smoldering peatlands.
+These feedbacks may contribute significantly to warming over the course of the century.</p>
+<p><img src="fig/ClimateFeedbackLoops.png" /></p>
+<p>The Arctic, warming now at four times the global average rate, shows how feedback loops can interact. Scientists know thawing permafrost releases greenhouse gases. A 2017 study showed the potential for carbon releases from the disintegration of an Alabama-sized area of permafrost. Researchers, however, don’t currently expect that process by itself to cause runaway warming in the next few decades.</p>
+<p>But Arctic sea ice is dwindling too, exposing more dark ocean water to absorb more heat, which leads to yet more ice melting. And the changes to sea ice extent and ocean surface temperatures affect the atmosphere above the sea and the permafrost.</p>
+<p>What researchers don’t yet fully understand or show in climate models is how all those different processes can amplify each other, and whether their interactions will lead to sudden and irreversible changes in the next few decades.</p>
+<p>Other climate feedbacks in the ocean could also accelerate global warming.
+The models used to calculate widely accepted global temperature increases, including those by the IPCC, give us the pathways towards holding the 1.5 degrees Celsius limit.
+The models assume that the ocean will continue to operate more or less in the same mode as today, in terms of heat uptake and in terms of the solubility of carbon dioxide.
+But the amplifying cycle of feedbacks could change that sooner than expected.</p>
+<p>The most recent science reports from the Intergovernmental Panel on Climate Change identify a handful of the most important feedbacks that could push the climate past tipping points, but since they still can’t be adequately assessed, the international science panel can’t determine their probability of happening, or accurately project how they will interact.</p>
+<p>“There’s a deeper picture here,” said co-author Tim Lenton, director of the Global Systems Institute at the University of Exeter. Lenton was deeply influenced by scientist James Lovelock’s Gaia hypothesis, which proposes that life interacts with its inorganic surroundings on the planet to form a self-regulating system that perpetuates the conditions required for it to persist. “That’s part of what some climate models may be missing,” he said.
+“Lovelock was a visionary in thinking about how humans and our actions are intertwined in that system, and of course, that’s also what the paper is about,” he said, “how to see ourselves as integral parts and actors in the system.”
+There has been an effort to bring a more faithful representation of the nuanced influences of life on the Earth into climate modeling, he said, but they aren’t yet fully integrated.</p>
+<p>Evidence shows that the damage from global warming is going up in a nonlinear way, so every tenth of a degree more warming will cause more damage than the previous tenth</p>
+<p><a href="https://insideclimatenews.org/news/17022023/climate-feedback-loop-accelerators/">Berwyn (2023) Scientists Examine Dangerous Global Warming ‘Accelerators’</a></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="climate-models.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="values-in-climate-science.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyrehaugen/rclm1/edit/master/206-model-evaluation.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["rclmm.pdf", "rclmm.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
