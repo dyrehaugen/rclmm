@@ -8,6 +8,7 @@ coupled-climate-social-models
 dice-climate-model
 the-failure-of-dice-economics
 critique-of-the-nordhaus-school
+decarbonization-in-dice
 e3me-ftt-genie
 ez-climate-model
 fair-climate-model
