@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Process-based IAMs | Climate Models</title>
+  <meta name="description" content="3 Process-based IAMs | Climate Models" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Process-based IAMs | Climate Models" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="dyrehaugen/rclmm" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Process-based IAMs | Climate Models" />
+  
+  
+  
+
+<meta name="author" content="Dyrehaugen Web Notebook" />
+
+
+<meta name="date" content="2023-12-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="climate-models.html"/>
+<link rel="next" href="model-evaluation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Climate Models</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Climate Change</a></li>
+<li class="part"><span><b>I Climate Models</b></span></li>
+<li class="chapter" data-level="2" data-path="climate-models.html"><a href="climate-models.html"><i class="fa fa-check"></i><b>2</b> Climate Models</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="climate-models.html"><a href="climate-models.html#university-of-chicago"><i class="fa fa-check"></i><b>2.1</b> University of Chicago</a></li>
+<li class="chapter" data-level="2.2" data-path="climate-models.html"><a href="climate-models.html#mental-picture-of-greenhouse-effect"><i class="fa fa-check"></i><b>2.2</b> Mental Picture of Greenhouse Effect</a></li>
+<li class="chapter" data-level="2.3" data-path="climate-models.html"><a href="climate-models.html#political-iams"><i class="fa fa-check"></i><b>2.3</b> Political IAMs</a></li>
+<li class="chapter" data-level="2.4" data-path="climate-models.html"><a href="climate-models.html#cap6"><i class="fa fa-check"></i><b>2.4</b> CAP6</a></li>
+<li class="chapter" data-level="2.5" data-path="climate-models.html"><a href="climate-models.html#coupled-climate-social-models"><i class="fa fa-check"></i><b>2.5</b> Coupled Climate-Social Models</a></li>
+<li class="chapter" data-level="2.6" data-path="climate-models.html"><a href="climate-models.html#dice-climate-model"><i class="fa fa-check"></i><b>2.6</b> DICE Climate Model</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="climate-models.html"><a href="climate-models.html#the-failure-of-dice-economics"><i class="fa fa-check"></i><b>2.6.1</b> The failure of Dice Economics</a></li>
+<li class="chapter" data-level="2.6.2" data-path="climate-models.html"><a href="climate-models.html#critique-of-the-nordhaus-school"><i class="fa fa-check"></i><b>2.6.2</b> Critique of the ‘Nordhaus School’</a></li>
+<li class="chapter" data-level="2.6.3" data-path="climate-models.html"><a href="climate-models.html#decarbonization-in-dice"><i class="fa fa-check"></i><b>2.6.3</b> Decarbonization in DICE</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="climate-models.html"><a href="climate-models.html#e3me-ftt-genie"><i class="fa fa-check"></i><b>2.7</b> E3ME-FTT-GENIE</a></li>
+<li class="chapter" data-level="2.8" data-path="climate-models.html"><a href="climate-models.html#ez-climate-model"><i class="fa fa-check"></i><b>2.8</b> EZ-Climate Model</a></li>
+<li class="chapter" data-level="2.9" data-path="climate-models.html"><a href="climate-models.html#fair-climate-model"><i class="fa fa-check"></i><b>2.9</b> FAIR Climate Model</a></li>
+<li class="chapter" data-level="2.10" data-path="climate-models.html"><a href="climate-models.html#gcam"><i class="fa fa-check"></i><b>2.10</b> GCAM</a></li>
+<li class="chapter" data-level="2.11" data-path="climate-models.html"><a href="climate-models.html#global-calculator"><i class="fa fa-check"></i><b>2.11</b> Global Calculator</a></li>
+<li class="chapter" data-level="2.12" data-path="climate-models.html"><a href="climate-models.html#mimi-framework"><i class="fa fa-check"></i><b>2.12</b> Mimi Framework</a></li>
+<li class="chapter" data-level="2.13" data-path="climate-models.html"><a href="climate-models.html#modtran"><i class="fa fa-check"></i><b>2.13</b> MODTRAN</a></li>
+<li class="chapter" data-level="2.14" data-path="climate-models.html"><a href="climate-models.html#monash-climate-model"><i class="fa fa-check"></i><b>2.14</b> Monash Climate Model</a></li>
+<li class="chapter" data-level="2.15" data-path="climate-models.html"><a href="climate-models.html#page"><i class="fa fa-check"></i><b>2.15</b> PAGE</a></li>
+<li class="chapter" data-level="2.16" data-path="climate-models.html"><a href="climate-models.html#bern-simple-climate-model-bernscm"><i class="fa fa-check"></i><b>2.16</b> Bern Simple Climate Model (BernSCM)</a></li>
+<li class="chapter" data-level="2.17" data-path="climate-models.html"><a href="climate-models.html#noresm"><i class="fa fa-check"></i><b>2.17</b> NorESM</a>
+<ul>
+<li class="chapter" data-level="2.17.1" data-path="climate-models.html"><a href="climate-models.html#ccsm4"><i class="fa fa-check"></i><b>2.17.1</b> CCSM4</a></li>
+<li class="chapter" data-level="2.17.2" data-path="climate-models.html"><a href="climate-models.html#noresm-features"><i class="fa fa-check"></i><b>2.17.2</b> NorESM Features</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="process-based-iams.html"><a href="process-based-iams.html"><i class="fa fa-check"></i><b>3</b> Process-based IAMs</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="process-based-iams.html"><a href="process-based-iams.html#the-costs-of-costless-climate-mitigation"><i class="fa fa-check"></i><b>3.1</b> The costs of “costless” climate mitigation</a></li>
+<li class="chapter" data-level="3.2" data-path="process-based-iams.html"><a href="process-based-iams.html#ai-in-climate-research"><i class="fa fa-check"></i><b>3.2</b> AI in Climate Research</a></li>
+<li class="chapter" data-level="3.3" data-path="process-based-iams.html"><a href="process-based-iams.html#climate-catastrophe"><i class="fa fa-check"></i><b>3.3</b> Climate Catastrophe</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="process-based-iams.html"><a href="process-based-iams.html#endgame"><i class="fa fa-check"></i><b>3.3.1</b> Endgame</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="process-based-iams.html"><a href="process-based-iams.html#goal-index"><i class="fa fa-check"></i><b>3.4</b> Goal Index</a></li>
+<li class="chapter" data-level="3.5" data-path="process-based-iams.html"><a href="process-based-iams.html#model-drift"><i class="fa fa-check"></i><b>3.5</b> Model Drift</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="model-evaluation.html"><a href="model-evaluation.html"><i class="fa fa-check"></i><b>4</b> Model-evaluation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="model-evaluation.html"><a href="model-evaluation.html#measuering-forcings"><i class="fa fa-check"></i><b>4.1</b> Measuering Forcings</a></li>
+<li class="chapter" data-level="4.2" data-path="model-evaluation.html"><a href="model-evaluation.html#modeling-feedbacks-interactions"><i class="fa fa-check"></i><b>4.2</b> Modeling Feedbacks Interactions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="values-in-climate-science.html"><a href="values-in-climate-science.html"><i class="fa fa-check"></i><b>5</b> Values in Climate Science</a></li>
+<li class="chapter" data-level="6" data-path="jra55--japanese-reanalysis-data.html"><a href="jra55--japanese-reanalysis-data.html"><i class="fa fa-check"></i><b>6</b> JRA55 -Japanese Reanalysis Data</a></li>
+<li class="part"><span><b>II Appendices</b></span></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i><b>A</b> About</a></li>
+<li class="chapter" data-level="B" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>B</b> Links</a></li>
+<li class="chapter" data-level="C" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i><b>C</b> NEWS</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="news.html"><a href="news.html#antarctica-polar-amplification"><i class="fa fa-check"></i><b>C.1</b> 230908 Antarctica Polar Amplification</a></li>
+<li class="chapter" data-level="C.2" data-path="news.html"><a href="news.html#no-us-green-monetary-policy---but-eu"><i class="fa fa-check"></i><b>C.2</b> 230116 No US Green Monetary Policy - but EU?</a></li>
+<li class="chapter" data-level="C.3" data-path="news.html"><a href="news.html#global-co2-emissions-have-been-flat-for-a-decade-new-data-reveals"><i class="fa fa-check"></i><b>C.3</b> 211104 Global CO2 emissions have been flat for a decade, new data reveals</a></li>
+<li class="chapter" data-level="C.4" data-path="news.html"><a href="news.html#top-climate-scientists-are-sceptical-that-nations-will-rein-in-global-warming"><i class="fa fa-check"></i><b>C.4</b> 211104 Top climate scientists are sceptical that nations will rein in global warming</a></li>
+<li class="chapter" data-level="C.5" data-path="news.html"><a href="news.html#microsoft-co2-removal"><i class="fa fa-check"></i><b>C.5</b> 210921 Microsoft CO2-removal</a></li>
+<li class="chapter" data-level="C.6" data-path="news.html"><a href="news.html#orca-turned-on---iceland"><i class="fa fa-check"></i><b>C.6</b> 210909 ORCA turned on - Iceland</a></li>
+<li class="chapter" data-level="C.7" data-path="news.html"><a href="news.html#arctic-sea-ice-at-record-low"><i class="fa fa-check"></i><b>C.7</b> 210715 Arctic Sea Ice at Record Low</a></li>
+<li class="chapter" data-level="C.8" data-path="news.html"><a href="news.html#dutch-court-against-shell"><i class="fa fa-check"></i><b>C.8</b> 210526 Dutch Court against Shell</a></li>
+<li class="chapter" data-level="C.9" data-path="news.html"><a href="news.html#ndcs-need-80-increase-to-2c"><i class="fa fa-check"></i><b>C.9</b> 210509 NDCs need 80% increase to 2°C</a></li>
+<li class="chapter" data-level="C.10" data-path="news.html"><a href="news.html#young-legal-action"><i class="fa fa-check"></i><b>C.10</b> 210508 Young Legal Action</a></li>
+<li class="chapter" data-level="C.11" data-path="news.html"><a href="news.html#earths-axis-tilted-by-melting-glaciers"><i class="fa fa-check"></i><b>C.11</b> 210424 Earth’s Axis tilted by Melting Glaciers</a></li>
+<li class="chapter" data-level="C.12" data-path="news.html"><a href="news.html#co2-and-methane-surged-in-2020"><i class="fa fa-check"></i><b>C.12</b> 210410 CO2 and Methane surged in 2020</a></li>
+<li class="chapter" data-level="C.13" data-path="news.html"><a href="news.html#gas-sustainability"><i class="fa fa-check"></i><b>C.13</b> 210404 Gas Sustainability</a></li>
+<li class="chapter" data-level="C.14" data-path="news.html"><a href="news.html#us-scc-update-in-progress"><i class="fa fa-check"></i><b>C.14</b> 210220 US SCC Update in Progress</a></li>
+<li class="chapter" data-level="C.15" data-path="news.html"><a href="news.html#focus-on-steel-meat-and-cement"><i class="fa fa-check"></i><b>C.15</b> 210215 Focus on Steel, Meat and Cement</a></li>
+<li class="chapter" data-level="C.16" data-path="news.html"><a href="news.html#new-insights-in-climate-science-2020"><i class="fa fa-check"></i><b>C.16</b> 210127 10 New Insights in Climate Science 2020</a></li>
+<li class="chapter" data-level="C.17" data-path="news.html"><a href="news.html#adaptation-summit"><i class="fa fa-check"></i><b>C.17</b> 210130 Adaptation Summit</a></li>
+<li class="chapter" data-level="C.18" data-path="news.html"><a href="news.html#warming-all-anthropogenic"><i class="fa fa-check"></i><b>C.18</b> 210118 Warming all anthropogenic</a></li>
+<li class="chapter" data-level="C.19" data-path="news.html"><a href="news.html#globale-temperature-1880-2020"><i class="fa fa-check"></i><b>C.19</b> 21014 Globale Temperature 1880-2020</a></li>
+<li class="chapter" data-level="C.20" data-path="news.html"><a href="news.html#not-so-long-lag"><i class="fa fa-check"></i><b>C.20</b> 210104 Not so long lag?</a></li>
+<li class="chapter" data-level="C.21" data-path="news.html"><a href="news.html#climate-finance-shadow-report-2020"><i class="fa fa-check"></i><b>C.21</b> 210102 Climate Finance Shadow Report 2020</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyrehaugen/rclmm" target="blank">On Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Climate Models</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="process-based-iams" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Process-based IAMs<a href="process-based-iams.html#process-based-iams" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Wilson Abstract</em></p>
+<p>Process-based integrated assessment models (IAMs) project long-term transformation path-
+ways in energy and land-use systems under what-if assumptions. IAM evaluation is necessary
+to improve the models’ usefulness as scientific tools applicable in the complex and contested
+domain of climate change mitigation. We contribute the first comprehensive synthesis of
+process-based IAM evaluation research, drawing on a wide range of examples across six
+different evaluation methods including historical simulations, stylised facts, and model diag-
+nostics. For each evaluation method, we identify progress and milestones to date, and draw out
+lessons learnt as well as challenges remaining. We find that each evaluation method has
+distinctive strengths, as well as constraints on its application. We use these insights to propose a
+systematic evaluation framework combining multiple methods to establish the appropriate-
+ness, interpretability, credibility, and relevance of process-based IAMs as useful scientific tools
+for informing climate policy. We also set out a programme of evaluation research to be
+mainstreamed both within and outside the IAM community.</p>
+<p><em>Wilson Memo</em></p>
+<p>Process-based IAMs have also been criticised for a range of perceived failings,
+including technological hubris, omitted drivers of sociotechnical change, and
+understating future uncertainties.</p>
+<p>We contribute the first synthesis of IAM evaluation research, drawing on a
+wide range of examples across six different evaluation methods: historical simulations, near-
+term observations, stylised facts, model hierarchies from simple to complex, model inter-
+comparison projects (including diagnostic indicators), and sensitivity analysis. For each
+method, we review key milestones in historical development and application, and draw out
+lessons learnt as well as remaining challenges.</p>
+<p>We also propose four criteria against which evaluation can
+help improve IAMs and their usefulness in policy contexts: appropriateness, interpretability,
+credibility, and relevance. We map each evaluation method onto these criteria, and conclude
+by arguing for a systematic evaluation framework which combines the strengths of multiple
+methods to overcome the limitations of any single method.</p>
+<p><strong>Process-based IAMs not benefit-cost models</strong></p>
+<p>We use ‘IAMs’ to mean process-based integrated assessment models
+(or what Weyant (2017) calls ‘detailed process’ or DP IAMs). These IAMs:</p>
+<ol style="list-style-type: decimal">
+<li><p>Represent explicitly the drivers and processes of change in global energy and land-use systems linked to the broader economy, often with a high degree of technological
+resolution in the energy supply</p></li>
+<li><p>Capture both biophysical and socioeconomic processes including human preferences, but
+do not generally include future impacts or damages of climate change on these processes</p></li>
+<li><p>Project cost-effective ‘optimal’ mitigation pathways under what-if assumptions or subject to pre-defined outcomes such as limiting global warming to 2 °C.</p></li>
+</ol>
+<p>Many process-based IAMs originate in energy system models or energy-economy models
+which have since integrated land use, greenhouse gas emissions, and other climate-related
+processes.</p>
+<p><a href="https://link.springer.com/article/10.1007/s10584-021-03099-9">Wilson (2021) Evaluating process-based integrated assessment models of climate change mitigation</a>
+<a href="pdf/Wilson_2021_Process-based_IAMs.pdf">(pdf)</a></p>
+<div id="the-costs-of-costless-climate-mitigation" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> The costs of “costless” climate mitigation<a href="process-based-iams.html#the-costs-of-costless-climate-mitigation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Kotchen</em></p>
+<p>By holding to the position that there’s no such thing as a free lunch, economists may be overestimating the true cost of mitigation. This could occur in top-down models because of failure to recognize that inefficient decision-making exists for individuals, industry, and governments, meaning that there are opportunities to reduce GHG emissions while lowering costs—a so-called “win-win.” The question is how pervasive are such opportunities. Whereas the economics IAMs assume there are none, the IPCC asserts that win-wins can account for up to 16% of emission reductions in 2030. The IPCC estimate omits a whole category of difficult-to-quantify nonmonetary costs.</p>
+<p>Different starting points on costless mitigation explain the vast majority of the divergence in the IPCC’s bottom-up estimates and top-down economic approaches.</p>
+<p>We consider comparisons to six other IAMs often called “process-based” models because they focus more on bottom-up integration of energy and biophysical systems rather than on benefit-cost analysis. The models that we consider are also used in different portions of the IPCC analysis. We find that these models are more closely aligned with the bottom-up estimates than the benefit-cost IAMs with regard to mitigation potentials and the treatment of costless mitigation. This finding is important because whereas the IPCC’s bottom-up analysis acknowledges omission of indirect, nonmonetary costs, the same qualification is typically not associated with policy analysis coming out of the process-based models.</p>
+<p><a href="https://www.science.org/doi/10.1126/science.adj2453">Kotchen (2023) The costs of “costless” climate mitigation</a>
+<a href="pdf/Kotchen_2023_Costless_Mitigation.pdf">(pdf)</a>
+<a href="pdf/Kotchen_2023_Costless_Mitigation_sm.pdf">Kotchen (2023) SM (pdf)</a></p>
+
+</div>
+<div id="ai-in-climate-research" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> AI in Climate Research<a href="process-based-iams.html#ai-in-climate-research" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Irrgang Abstract</em></p>
+<p>Earth system models (ESMs) are our main tools for quantifying the physical state of the Earth and predicting how it might change in the future under ongoing anthropogenic forcing. In recent years, however, artificial intelligence (AI) methods have been increasingly used to augment or even replace classical ESM tasks, raising hopes that AI could solve some of the grand challenges of climate science. In this Perspective we survey the recent achievements and limitations of both process-based models and AI in Earth system and climate research, and propose a methodological transformation in which deep neural networks and ESMs are dismantled as individual approaches and reassembled as learning, self-validating and interpretable ESM–network hybrids. Following this path, we coin the term neural Earth system modelling. We examine the concurrent potential and pitfalls of neural Earth system modelling and discuss the open question of whether AI can bolster ESMs or even ultimately render them obsolete.</p>
+<p><a href="https://www.nature.com/articles/s42256-021-00374-3">Irrgang (2021) Towards neural Earth system modelling by integrating artificial intelligence in Earth system science (paywall)</a></p>
+<p><em>CarbonBrief</em></p>
+<p>A new line of climate research is emerging that aims to complement and extend the use of observations and climate models.
+We propose an approach whereby machine learning and climate models are not used as individual tools, but rather as connected “hybrids” that are capable of adaptive evolution and self-validation, while still being able to be interpreted by humans.</p>
+<p>Climate models have seen continuous improvement over recent decades. The most recent developments have seen the incorporation of biogeochemical cycles – the transfer of chemicals between living things and their environment – and how they interact with the climate system.
+Adding in new processes and greater detail have resulted in more sophisticated simulations of the Earth’s climate, it comes at the cost of increasingly large and complex models.</p>
+<p>ESMs are built on equations that represent the processes and interactions that drive the Earth’s climate. Some of these processes can be described by fundamental laws – such as the Navier-Stokes equations of fluid motion, which capture the speed, pressure, temperature and density of the gases in the atmosphere and the water in the ocean. However, others – such as physiological processes governing the vegetation that covers vast parts of the land surface – cannot and instead require approximations based on observations.</p>
+<p>These approximations – as well as other limitations that stem from the sheer complexity of the Earth system – introduce uncertainties into the model’s representation of the climate.</p>
+<p>As a result, despite the tremendous success of ESMs, some limitations remain – such as how well models capture the severity and frequency of extreme events, and abrupt changes and “tipping points”.</p>
+<p>In contrast to ESMs, machine learning does not require prior knowledge about the governing laws and relations within a problem. The respective relations are derived entirely from the data used during an automated learning process. This flexible and powerful concept can be expanded to almost any level of complexity.</p>
+<p>The availability of observed climate data and model simulations in combination with ready-to-use machine learning tools – such as TensorFlow and Keras – have led to an explosion of machine learning studies in Earth and climate sciences. These have explored how machine learning can be applied to enhance or even replace classical ESM tasks.</p>
+<p>Despite wordings like “learning” and “artificial intelligence”, today’s machine learning applications in this field are far from intelligent and lack actual process knowledge. More accurately, they are highly specialised algorithms that are trained to solve very specific problems solely based on the problem-related presented data.</p>
+<p>Consequently, machine learning is often considered a black box that makes it hard to gather insights from. Similarly, it is often very difficult to validate machine learning in terms of physical consistency, even if their generated outputs may seem plausible.</p>
+<p>Many of today’s machine learning applications for climate sciences are proof-of-concept studies that work in a simplified environment – for example, with a spatial resolution much lower than in state-of-the-art ESMs or with a reduced number of physical variables. Thus, it remains to be seen how well machine learning can be scaled up to operational and reliable usage.</p>
+<p>Initially, machine learning in climate research was primarily used for automated analysis of patterns and relations in Earth observations. However, more recently, it has been increasingly targeted towards ESMs – for example, by taking over or correcting specific model components or by accelerating computationally demanding numerical simulations.</p>
+<p>This development has led to the concept of “hybrids” of ESMs and machine learning, which aim to combine their respective methodological advantages while minimising their limitations. For instance, the hybrid concept has been explored for analysing continental hydrology.</p>
+<p>Continuing this line of research will increasingly blend the so-far still strict line between process-based models and machine learning approaches.</p>
+<p><img src="fig/Neural_ESM.png" /></p>
+<p><em>Figure: Illustration of the stages of bringing ESMs and machine learning together towards neural Earth system modelling. The left and right branches visualise the current efforts and goals for building weakly coupled hybrids (blue and yellow), which converge towards strongly coupled hybrids. </em></p>
+<p>Within machine learning, making a correct prediction for the wrong reasons can be termed taking a “shortcut”, or having a system description that is “underdetermined”. Taking shortcuts is increasingly likely within climate science because the data available to us from the observational record is short and biased towards recent decades.</p>
+<p><a href="https://www.carbonbrief.org/guest-post-how-artificial-intelligence-is-fast-becoming-a-key-tool-for-climate-science">CarbonBrief Review</a></p>
+
+</div>
+<div id="climate-catastrophe" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Climate Catastrophe<a href="process-based-iams.html#climate-catastrophe" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="endgame" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Endgame<a href="process-based-iams.html#endgame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Kemp Abstract</em></p>
+<p>Prudent risk management requires consideration of bad-to-worst-case scenarios. Yet, for climate change, suchpotential futures are poorly understood. Could anthropo-genic climate change result in worldwide societal collapseor even eventual human extinction? At present, this is adangerously underexplored topic. Yet there are amplereasons to suspect that climate change could result in aglobal catastrophe. Analyzing the mechanisms for theseextreme consequences could help galvanize action, improveresilience, and inform policy, including emergency respon-ses. We outline current knowledge about the likelihood ofextreme climate change, discuss why understanding bad-to-worst cases is vital, articulate reasons for concern about cat-astrophic outcomes, define key terms, and put forward aresearch agenda. The proposed agenda covers four mainquestions: 1) What is the potential for climate change todrive mass extinction events? 2) What are the mechanismsthat could result in human mass mortality and morbidity? 3)What are human societies’ vulnerabilities to climate-triggered risk cascades, such as from conflict, political insta-bility, and systemicfinancial risk? 4) How can these multiplestrands of evidence—together with other global dangers—be usefully synthesized into an“integrated catastropheassessment”?Itistimeforthescientific community to grap-ple with the challenge of better understanding catastrophicclimate change.</p>
+<p><a href="https://www.pnas.org/doi/epdf/10.1073/pnas.2108146119">Kemp (2022) Climate Endgame: Exploring catastrophic climatechange scenarios</a>
+<a href="pdf/Kemp_2022_Climate_Endgame.pdf">(pdf)</a></p>
+
+</div>
+</div>
+<div id="goal-index" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Goal Index<a href="process-based-iams.html#goal-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In economic modelling choice of goal index (utility) function matters.
+Daniel 2018<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> presents this figure:</p>
+<p><img src="fig/fig_EZvsCRRA_daniel2018fig1.png" /></p>
+<p>Fig. Optimal CO2-prices with increasing risk aversion for EZ vs CRRA utility specification. (From Daniel 2018)</p>
+<p>As one of the co-authors explain: ‘We where not able to get the Social
+Cost of Carbon (SCC) under $120’.
+That is for ‘reasonable risk aversion’, using EZ-utilities.
+The ‘standard’ specification - with CRRA - utilities ends up with SCC
+of $20 or below.</p>
+<p><span class="math display">\[V_1 = A [\tilde{C\_t}, \mu_t(V\_{t+1})]\]</span></p>
+<p>Specification of the Goal Index function may seem a trivial technical issue -
+no so!
+There exists a broad professional litterature and profound discussions on
+this matter -
+which might de difficult to dis-entangle.</p>
+<p>Let us begin with Frank Ramsey’s growth model from 1928, commonly known
+as the Ramsey-Cass-Koopmans model.</p>
+<p><span class="math inline">\(F(K,L)\)</span> is an aggregate production function with factors <span class="math inline">\(K\)</span> (Capital) and
+<span class="math inline">\(L\)</span> (Labour).</p>
+
+</div>
+<div id="model-drift" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Model Drift<a href="process-based-iams.html#model-drift" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Abstract Sausen</em></p>
+<p>A method is proposed for removing the
+drift of coupled atmosphere-ocean models, which
+in the past has often hindered the application of
+coupled models in climate response and sensitivity experiments.
+The ocean-atmosphere flux fields
+exhibit inconsistencies when evaluated separately
+for the individual sub-systems in independent,
+uncoupled mode equilibrium climate computations.
+In order to balance these inconsistencies a
+constant ocean-atmosphere flux correction field is
+introduced in the boundary conditions coupling
+the two sub-systems together. The method ensures
+that the coupled model operates at the reference
+climate state for which the individual model subsystems
+were designed without affecting the dynamical response of the coupled system in climate
+variability experiments. The method is illustrated
+for a simple two component box model and an
+ocean general circulation model coupled to a two
+layer diagnostic atmospheric model.</p>
+<p><em>Memo Barthel</em></p>
+<p>The coupling of different climate sub-systems poses a number of technical
+problems. An obvious problem arising from the
+different time scales is the synchronization or
+matching of the numerical integration of subsys-
+tems characterized by widely differing time steps.
+A more subtle problem is</p>
+<p><em>Model Drift</em>
+When two general circulation models of the
+atmosphere and ocean are coupled together in a
+single model, it is generally found that the cou-
+pled system gradually drifts into a new climate
+equilibrium state which is far removed from the
+observed climate. The coupled model climate
+equilibrium may be so unrealistic (for example,
+with respect to sea ice extent, or the oceanic equa-
+torial current system) that climate response or
+sensitivity experiments relative to this state be-
+come meaningless. This occurs regularly even
+when the individual models have been carefully
+tested in detailed numerical experiments in the
+decoupled mode and have been shown to yield
+satisfactory simulations of the climate of the sepa-
+rate ocean or atmosphere sub-systems.
+The drift of the coupled model is clearly a sign
+that something is amiss with the models. Howev-
+er, we suggest that it is not necessary to wait with
+climate response and sensitivity experiments with
+coupled models unit all causes of model drift
+have been properly identified and removed.
+Model drift is, in fact, an extremely sensitive indi-
+cator of model imperfections. The fact that the
+equilibrium climate into which a coupled model
+drifts is unacceptably far removed from the real
+climate does not necessarily imply that the model
+dynamics are too unrealistic for the model to be
+applied for climate response and sensitivity ex-
+periments. One should therefore devise methods
+for separating the drift problem from the basically
+independent problem of determining the change
+of the simulated climate induced by a change in
+boundary conditions a n d / o r external forcing (cli-
+mate response), and from the question of the ef-
+fect of changes in the physical or numerical for-
+mulation of the model (model sensitivity).</p>
+<p><em>Flux Correction</em>
+The separation of the mean climate
+simulation from the climate response or sensitiv-
+ity problem can be achieved for coupled models
+rather simply by an alternative technique, the flux
+correction method.
+The errors that result in a drift of the coupled
+model are compensated in this method by con-
+stant correction terms in the flux expressions by
+which the separate sub-system models are cou-
+pled together. The correction terms have no in-
+fluence on the dynamics of the system in climate
+response or sensitivity experiments, but ensure
+that the “working point” of the model lies close to
+the climate state for which the individual models
+were originally tuned.
+The basic principle of the flux correction method
+is to couple the atmosphere and the ocean in such
+a manner that in the unperturbed case each sub-
+system simulates its own mean climate in the
+same manner as in the uncoupled mode, but re-
+sponds fully interactively to the other sub-system
+in climate response or sensitivity experiments.</p>
+<p><a href="pdf/Barthel_1988_Coupled_ocean_atmosphere_models_with_flux_corection.pdf">Sausen (1988) Coupled Ocean-Atmosphere Model Drift Flux Correction (pdf)</a></p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>See Links to references<a href="process-based-iams.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="climate-models.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="model-evaluation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyrehaugen/rclm1/edit/master/203-Process-based_IAMs.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["rclmm.pdf", "rclmm.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
